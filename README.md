@@ -75,3 +75,11 @@ keytool -importkeystore -srckeystore spring-boot-http2.jks -destkeystore spring-
 ~~~
 window.chrome.loadTimes()
 ~~~
+
+## JDK 8
+
+- 在 jdk 1.8 中，启动时错误日志
+~~~
+2020-08-09 12:39:43.246 ERROR 8700 --- [           main] o.a.coyote.http11.Http11NioProtocol      : The upgrade handler [org.apache.coyote.http2.Http2Protocol] for [h2] only supports upgrade via ALPN but has been configured for the ["https-jsse-nio-1443"] connector that does not support ALPN.
+~~~
+- 此日志说明未能正确配置 http/2，项目使用 http/1.1
