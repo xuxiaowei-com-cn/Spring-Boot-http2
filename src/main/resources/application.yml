@@ -6,6 +6,10 @@ server:
     key-store: classpath:ssl/spring-boot-http2.jks
     key-store-password: xuxiaowei
     key-password: xuxiaowei
+  # http/2 配置
+  http2:
+    # 开启 http/2 配置
+    enabled: true
 #
 # Spring Boot 配置
 spring:
