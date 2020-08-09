@@ -83,3 +83,14 @@ window.chrome.loadTimes()
 2020-08-09 12:39:43.246 ERROR 8700 --- [           main] o.a.coyote.http11.Http11NioProtocol      : The upgrade handler [org.apache.coyote.http2.Http2Protocol] for [h2] only supports upgrade via ALPN but has been configured for the ["https-jsse-nio-1443"] connector that does not support ALPN.
 ~~~
 - 此日志说明未能正确配置 http/2，项目使用 http/1.1
+
+- [Tomcat Native](http://tomcat.apache.org/download-native.cgi)
+
+    - jdk 1.8 配置 http/2 所需依赖
+    
+    - JVM参数
+        
+        - Windows 环境配置
+            ~~~
+            -Djava.library.path=D:\tomcat-native-1.2.24-openssl-1.1.1g-win32-bin\bin\x64
+            ~~~
