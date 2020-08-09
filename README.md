@@ -19,7 +19,7 @@
             - Project language level
                 - 设置为 jdk 1.8
 
-        Modules
+        - Modules
             - 项目名
                 - Sources
                     - Language level
