@@ -71,3 +71,7 @@ keytool -genkeypair -alias spring-boot-http2 -keyalg RSA -validity 3650 -keystor
 keytool -importkeystore -srckeystore spring-boot-http2.jks -destkeystore spring-boot-http2.jks -deststoretype pkcs12
 ~~~
 
+## 查看 http/2
+~~~
+window.chrome.loadTimes()
+~~~
